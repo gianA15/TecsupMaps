@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TecsupMaps.ContactView"
+             NavigationPage.HasNavigationBar="False"
+              BackgroundColor="#45C7FF">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                <Image Source="docente.JPG" WidthRequest="300" HeightRequest="300" Aspect="AspectFill">
+                    <Image.Clip>
+                        <EllipseGeometry Center="150,150" RadiusX="150" RadiusY="150" />
+                    </Image.Clip>
+                </Image>
+                <Label Text="Alza Casanova, Américo" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" />
+            </StackLayout>
+
+            <Grid VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Frame Grid.Column="0" BackgroundColor="#1C4B99" WidthRequest="100" HeightRequest="20"  Margin="0,10,5,0" CornerRadius="15">
+                    <Label Text="Carrera" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="white" />
+                </Frame>
+                <Frame Grid.Column="1" BackgroundColor="#1C4B99" WidthRequest="100" HeightRequest="60" Margin="5,10,0,0" CornerRadius="15">
+                    <Label Text="Diseño y Desarrollo de Software" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                </Frame>
+            </Grid>
+
+            <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Frame BackgroundColor="#1C4B99" WidthRequest="100" HeightRequest="20" Margin="0,10,5,0" CornerRadius="15">
+                    <Label Text="Ciclo" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                </Frame>
+                <Frame BackgroundColor="#1C4B99" WidthRequest="100" HeightRequest="10" Margin="5,10,0,0" CornerRadius="15">
+                    <Label Text="5° Ciclo" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Frame BackgroundColor="#1C4B99" WidthRequest="100" HeightRequest="20" Margin="0,10,5,0" CornerRadius="15">
+                    <Label Text="Código" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                </Frame>
+                <Frame BackgroundColor="#1C4B99" WidthRequest="100" HeightRequest="10" Margin="5,10,0,0" CornerRadius="15">
+                    <Label Text="122321" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

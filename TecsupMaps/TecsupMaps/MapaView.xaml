@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TecsupMaps.MapaView"
+             BackgroundColor="#45C7FF"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <!-- Nueva fila para los botones -->
+            </Grid.RowDefinitions>
+            <SearchBar Grid.Row="0" Placeholder="Buscar" Margin="10" FontSize="10" />
+            <Frame Grid.Row="1" CornerRadius="10" Margin="20">
+                <Image Source="mapa.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </Frame>
+            <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="Center" Margin="10" Spacing="0">
+                <Button BackgroundColor="#1C4B99" ImageSource="ubicacion.png" Margin="0" Padding="0" />
+                <Button BackgroundColor="#1C4B99" ImageSource="calendario.png" Margin="0" Padding="0" Clicked="OnButton2Clicked" />
+                <Button BackgroundColor="#1C4B99" ImageSource="persona.png" Margin="0" Padding="0" Clicked="OnButton3Clicked"  />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

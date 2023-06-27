@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TecsupMaps.Login"
+             xmlns:local="clr-namespace:TecsupMaps"
+             BackgroundImageSource="fondo.jpg"
+             x:Name="LoginPage">
+    <ContentPage.Content>
+        
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Image Source="logo.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0,40,0,0" HeightRequest="50"/>
+            <Label Text="CÓDIGO DE ESTUDIANTE"
+                   FontSize="15"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+            <Frame BorderColor="Black"
+                   BackgroundColor="Transparent"
+                   Margin="15"
+                   Padding="0"
+                   CornerRadius="10">
+                <Entry Placeholder="Ingrese su código de estudiante"
+                       PlaceholderColor="White"
+                       TextColor="White"
+                       BackgroundColor="Gray"
+                       FontSize="10"
+                       HeightRequest="60"
+                       HorizontalTextAlignment="Center"/>
+            </Frame>
+            <Label Text="CONTRASEÑA"
+                   FontSize="15"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+            <Frame BorderColor="Black"
+                   BackgroundColor="Transparent"
+                   Margin="15"
+                   Padding="0"
+                   CornerRadius="10">
+                <Entry Placeholder="Ingrese su contraseña"
+                       PlaceholderColor="White"
+                       BackgroundColor="gray"
+                       TextColor="White"
+                       FontSize="10"
+                       HeightRequest="60"
+                       IsPassword="True"
+                       HorizontalTextAlignment="Center"/>
+            </Frame>
+            <Button x:Name="IngresarButton"
+                    Text="Ingresar"
+                    TextColor="White"
+                    BorderWidth="2"
+                    Margin="30,10,30,20"
+                    FontSize="18"
+                    HeightRequest="60"
+                    CornerRadius="60"
+                    BackgroundColor="#1C4B99"
+                    Clicked="OnIngresarButtonClicked"/>
+            <Label Text="¿Olvidaste tu contraseña?"
+                   FontSize="12"
+                   TextColor="white"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,10"
+                   FontAttributes="Bold"/>
+            <Label Text="App exclusiva para alumnos de Tecsup"
+                   FontSize="12"
+                   TextColor="white"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,20"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
